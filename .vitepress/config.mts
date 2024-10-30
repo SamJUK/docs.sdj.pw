@@ -31,7 +31,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Docs', link: '/introduction' },
+      { text: 'About Me', link: 'https://www.sdj.pw/about/' },
       { text: 'Blog', link: 'https://www.sdj.pw/' }
     ],
 
