@@ -2,7 +2,7 @@
 
 ## Admin Management
 
-```sh
+```php
 # List all Admin Users
 \Aero\Admin\Models\Admin::all()->pluck('email');
 
