@@ -50,6 +50,9 @@ export default defineConfig({
             { text: 'Artifact Cleanup', link: '/general/github/cleanup-artifacts' },
             { text: 'Dependabot', link: '/general/github/dependabot' },
           ]},
+          { text: 'Bitbucket', collapsed: true, items: [
+            { text: 'Renovate', link: '/general/bitbucket/renovate-mend' },
+          ]},
           { text: 'Sentry.io', collapsed: true, items: [
             { text: 'Self Hosting', link: '/general/sentry/self-hosting' },
             { text: 'Disk Space Cleanup', link: '/general/sentry/disk-space-cleanup' },
