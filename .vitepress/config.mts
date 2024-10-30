@@ -7,7 +7,7 @@ export default defineConfig({
   lastUpdated: true,
   srcDir: './src',
   sitemap: {
-    hostname: 'https://localhost:1313'
+    hostname: 'https://docs.sdj.pw'
   },
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
@@ -80,7 +80,7 @@ export default defineConfig({
           { text: 'Configure Ratelimiting', link: '/nginx/ratelimiting' }
         ]
       },
-      { 
+      {
         text: 'Warden',
         collapsed: true,
         items: [
