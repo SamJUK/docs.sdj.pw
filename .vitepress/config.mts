@@ -48,6 +48,7 @@ export default defineConfig({
           { text: 'Github', collapsed: true, items: [
             { text: 'Actions', link: '/general/github/actions' },
             { text: 'Artifact Cleanup', link: '/general/github/cleanup-artifacts' },
+            { text: 'Dependabot', link: '/general/github/dependabot' },
           ]},
           { text: 'Sentry.io', collapsed: true, items: [
             { text: 'Self Hosting', link: '/general/sentry/self-hosting' },
@@ -113,6 +114,7 @@ export default defineConfig({
         text: 'Magento',
         collapsed: true,
         items: [
+          { text: 'Automatic Updates', link: '/magento/auto-updates' },
           { text: 'Managing Media', link: '/magento/managing-media' },
           { text: 'CosmicSting CVE-2024-34102', link: '/magento/cosmicsting'},
           { text: 'Optimise SCD Build Process', link: '/magento/optimise-scd-build-process' },
