@@ -36,6 +36,13 @@ systemctl edit --full varnishncsa # Add -f /etc/varnish/varnishncsa.format to th
 systemctl enable --now varnishncsa
 ```
 
+## Monitoring Cache Purges
+Cache Purges happen when you update content / clear cache, from outside of Varnish. and you need to inform varnish it needs to refresh its content.
+
+```sh
+varnishlog -g request -q 'ReqMethod eq "PURGE"'
+```
+
 ## Enable Cache Invalidation Logging
 If you have PURGE requests coming from Magento, but are unsure what is triggering it. You can enable debug logging by running the following commands, and this will start logging some `cache_invalidate` entries to the `system.log` file.
 ```sh
@@ -45,8 +52,8 @@ php bin/magento setup:config:set --enable-debug-logging=true && php bin/magento 
 Alternatively if you do not want to change the config setting, you can edit the `execute` method within `vendor/magento/framework/Cache/InvalidateLogger.php` and change the log to info/warn level to enable logging in non debug mode.
 
 ## Cache Invalidation Stack Traces
-Sometimes the you need a bit more information about whats triggered the cache invalidate than just the method & URL. 
-We can add the backtrace for the cache invalidation logs by editing the `makeParams` method within `vendor/magento/framework/Cache/InvalidateLogger.php` 
+Sometimes the you need a bit more information about whats triggered the cache invalidate than just the method & URL.
+We can add the backtrace for the cache invalidation logs by editing the `makeParams` method within `vendor/magento/framework/Cache/InvalidateLogger.php`
 ```diff
  private function makeParams($invalidateInfo)
  {
@@ -57,3 +64,4 @@ We can add the backtrace for the cache invalidation logs by editing the `makePar
 -    return compact('method', 'url', 'invalidateInfo');
  }
 ```
+
