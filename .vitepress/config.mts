@@ -65,7 +65,8 @@ export default defineConfig({
           { text: 'NewRelic', link: '/general/newrelic' },
           { text: 'Curl', link: '/general/curl' },
           { text: 'Block Tor Exit Routes', link: '/general/tor-block-exit-routes' },
-          { text: 'CSP Reporting', link: '/general/csp-reporting'}
+          { text: 'CSP Reporting', link: '/general/csp-reporting'},
+          { text: 'Composer', link: '/general/composer' },
         ]
       },
       {
@@ -99,6 +100,7 @@ export default defineConfig({
         items: [
           { text: 'Multiple Versions', link: '/python/multiple-versions' },
           { text: 'Virtual Environments', link: '/python/virtual-environments' },
+          { text: 'Poetry', link: '/python/poetry' },
         ]
       },
       {
@@ -111,12 +113,14 @@ export default defineConfig({
             { text: 'Load Graphs', link: '/linux/email-alerts/load-graphs' },
           ]},
           { text: 'Image Optimisation', link: '/linux/image-optimisation' },
+          { text: 'Ubuntu', link: '/linux/ubuntu' }
         ]
       },
       {
         text: 'Magento',
         collapsed: true,
         items: [
+          { text: 'App/Code', link: '/magento/app-code' },
           { text: 'Automatic Updates', link: '/magento/auto-updates' },
           { text: 'Managing Media', link: '/magento/managing-media' },
           { text: 'CosmicSting CVE-2024-34102', link: '/magento/cosmicsting'},

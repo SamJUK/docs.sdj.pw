@@ -52,3 +52,9 @@ lsvirtualenv
 ```sh
 rmvirtualenv myproject
 ```
+
+## Usage - Poetry
+
+Poetry offers more feature fledged dependency management, including its own way to activate virtual environments. 
+
+Refer to the separate page for [Poetry notes](poetry.md)
