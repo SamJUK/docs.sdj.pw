@@ -40,11 +40,6 @@ export default defineConfig({
         text: 'General',
         collapsed: true,
         items: [
-          { text: 'OpenVPN', collapsed: true, items: [
-            { text: 'OpenVPN Installation', link: '/general/openvpn/installation' },
-            { text: 'OpenVPN Split Routing', link: '/general/openvpn/split-routing' },
-            { text: 'OpenVPN Static Client IPs', link: '/general/openvpn/static-client-ips' },
-          ]},
           { text: 'Github', collapsed: true, items: [
             { text: 'Actions', link: '/general/github/actions' },
             { text: 'Artifact Cleanup', link: '/general/github/cleanup-artifacts' },
@@ -63,37 +58,39 @@ export default defineConfig({
           ]},
           { text: 'Ansible', link: '/general/ansible' },
           { text: 'NewRelic', link: '/general/newrelic' },
-          { text: 'Curl', link: '/general/curl' },
           { text: 'Block Tor Exit Routes', link: '/general/tor-block-exit-routes' },
           { text: 'CSP Reporting', link: '/general/csp-reporting'},
-          { text: 'Composer', link: '/general/composer' },
         ]
       },
-      {
-        text: 'Varnish',
+      { 
+        text: 'Software',
         collapsed: true,
         items: [
-          { text: 'Flushing Varnish', link: '/varnish/flush' },
-          { text: 'Debug Cache Performance', link: '/varnish/debug-cache-performance' }
+          { text: 'OpenVPN', collapsed: true, items: [
+            { text: 'OpenVPN Installation', link: '/software/openvpn/installation' },
+            { text: 'OpenVPN Split Routing', link: '/software/openvpn/split-routing' },
+            { text: 'OpenVPN Static Client IPs', link: '/software/openvpn/static-client-ips' },
+          ]},
+          { text: 'Varnish', collapsed: true, items: [
+            { text: 'Flushing Varnish', link: '/software/varnish/flush' },
+            { text: 'Debug Cache Performance', link: '/software/varnish/debug-cache-performance' }
+          ]},
+          { text: 'Nginx', collapsed: true, items: [
+            { text: 'Nginx Replace Polyfill.io', link: '/software/nginx/replace-polyfill-io' },
+            { text: 'Nginx Rate Limiting', link: '/software/nginx/rate-limiting' }
+          ]},
+          { text: 'Composer', collapsed: true, items: [
+            { text: 'Composer Patches', link: '/software/composer/patches' },
+            { text: 'Composer Artifacts', link: '/software/composer/artifacts' }
+          ]},
+          { text: 'Curl', link: '/software/curl' },
         ]
       },
-      {
-        text: 'Nginx',
-        collapsed: true,
-        items: [
-          { text: 'Replace Polyfill.io', link: '/nginx/replace-polyfill-io' },
-          { text: 'Configure Ratelimiting', link: '/nginx/ratelimiting' }
-        ]
-      },
-      {
-        text: 'Warden',
-        collapsed: true,
-        items: [
-          { text: 'Anonymise DB', link: '/warden/anonymise-db' },
-          { text: 'Install PHP-SPX', link: '/warden/php-spx' },
-          { text: 'Wordpress Bedrock', link: '/warden/wordpress-bedrock' }
-        ]
-      },
+      { text: 'Warden', collapsed: true, items: [
+        { text: 'Anonymise DB', link: '/warden/anonymise-db' },
+        { text: 'Install PHP-SPX', link: '/warden/php-spx' },
+        { text: 'Wordpress Bedrock', link: '/warden/wordpress-bedrock' }
+      ]},
       {
         text: 'Python',
         collapsed: true,
@@ -120,18 +117,30 @@ export default defineConfig({
         text: 'Magento',
         collapsed: true,
         items: [
-          { text: 'App/Code', link: '/magento/app-code' },
-          { text: 'Automatic Updates', link: '/magento/auto-updates' },
-          { text: 'Managing Media', link: '/magento/managing-media' },
-          { text: 'CosmicSting CVE-2024-34102', link: '/magento/cosmicsting'},
-          { text: 'Optimise SCD Build Process', link: '/magento/optimise-scd-build-process' },
-          { text: 'Identify DB Schema Changes', link: '/magento/identify-db-schema-changes' },
-          { text: 'Magepack Javascript Bundling', link: '/magento-magepack-javascript-bundling' },
-          { text: 'Critical CSS', link: '/magento-critical-css' },
-          { text: 'Cleanup Spam Customer Accounts', link: '/magento/spam-account-cleanup' },
-          { text: 'Find noncacheable blocks', link: '/magento/non-cacheable-blocks' },
-          { text: 'CLI Scratch file', link: '/magento/scratch-file'},
-          { text: 'Cloud | Vars / Store Codes', link: '/magento/cloud-store-codes' }
+          { text: 'General', collapsed: true, items: [
+            { text: 'CLI Scratch file', link: '/magento/scratch-file'},
+          ]},
+          { text: 'Operations', collapsed: true, items: [
+            { text: 'Automatic Updates', link: '/magento/auto-updates' },
+            { text: 'Optimise SCD Build Process', link: '/magento/optimise-scd-build-process' },
+            { text: 'Managing Media', link: '/magento/managing-media' },
+            { text: 'Magepack Javascript Bundling', link: '/magento-magepack-javascript-bundling' },
+            { text: 'Critical CSS', link: '/magento-critical-css' },
+            { text: 'Cleanup Spam Customer Accounts', link: '/magento/spam-account-cleanup' },
+          ]},
+          { text: 'Development', collapsed: true, items: [
+            { text: 'App/Code', link: '/magento/app-code' },
+          ]},
+          { text: 'Debugging', collapsed: true, items: [
+            { text: 'Identify DB Schema Changes', link: '/magento/identify-db-schema-changes' },
+            { text: 'Find noncacheable blocks', link: '/magento/non-cacheable-blocks' },
+          ]},
+          { text: 'Cloud/Commerce', collapsed: true, items: [
+            { text: 'Setting Store Codes', link: '/magento/cloud-store-codes' }
+          ]},
+          { text: 'Security', collapsed: true, items: [
+            { text: 'CosmicSting', link: '/magento/cosmicsting'},
+          ]}
         ]
       },
       {
