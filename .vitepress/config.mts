@@ -73,6 +73,7 @@ export default defineConfig({
           ]},
           { text: 'Varnish', collapsed: true, items: [
             { text: 'Flushing Varnish', link: '/software/varnish/flush' },
+            { text: 'Reloading the VCL', link: '/software/varnish/reloading-the-vcl' },
             { text: 'Debug Cache Performance', link: '/software/varnish/debug-cache-performance' }
           ]},
           { text: 'Nginx', collapsed: true, items: [
