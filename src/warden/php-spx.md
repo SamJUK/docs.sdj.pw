@@ -1,5 +1,22 @@
 # Install PHP SPX in a Warden Environment
 
+PHP SPX is a simple, free and open source profiler. It covers both FPM and CLI requests, and provides a built-in UI to visualise the generated reports.
+
+For more information, please see the [PHP SPX Github Repository](https://github.com/NoiseByNorthwest/php-spx) or [Demo Report](https://noisebynorthwest.github.io/php-spx/demo/report.html?key=spx-full-20191229_175636-06d2fe5ee423-3795-233665123).
+
+## v0.15.0
+
+The Warden 0.15.0 release starts to implement official support for PHP SPX. Building the relevant docker images & making the relevant configuration changes within Nginx/Varnish.
+
+See the following [Github Comment](https://github.com/wardenenv/images/pull/17#issuecomment-2481416521) on instructions on how to enable it on a project per project basis.
+
+And the following [Pull Request](https://github.com/wardenenv/warden/pull/820) is currently open to finish the implementation.
+
+
+## Below v0.15.0
+
+For warden versions `0.14.3` and below, we can run the following script from the host machine whilst within a warden project.
+
 ```sh
 #!/usr/bin/env sh
 #
