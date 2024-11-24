@@ -25,6 +25,11 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
 
+    historyLink: {
+      pattern: 'https://github.com/samjuk/docs.sdj.pw/commits/master/src/:path',
+      text: 'View History'
+    },
+
     search: {
       provider: 'local'
     },
@@ -165,5 +170,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/samjuk' }
     ]
-  },
+  }
 })
