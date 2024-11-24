@@ -62,6 +62,16 @@ export default defineConfig({
           { text: 'CSP Reporting', link: '/general/csp-reporting'},
         ]
       },
+      {
+        text: 'Operations', collapsed: true, items: [
+          { text: 'Ansible', collapsed: true, items: [
+            { text: 'Provisioning', link: 'operations/ansible/provisioning' }
+          ]},
+          { text: 'Terraform', collapsed: true, items: [
+            { text: 'Cloudflare', link: 'operations/terraform/cloudflare' }
+          ]}
+        ]
+      },
       { 
         text: 'Software',
         collapsed: true,
@@ -156,5 +166,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/samjuk' }
     ]
-  }
+  },
 })
