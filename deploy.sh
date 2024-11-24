@@ -67,7 +67,11 @@ echo "[+] Deploying to remote"
 rsync -e "ssh -p $REMOTE_PORT" -azv --delete ./public/ "$REMOTE_HOST:$REMOTE_PATH"
 
 echo "[+] Reload nginx to apply any rewrites"
-ssh -p$REMOTE_PORT $REMOTE_HOST "sudo /opt/reload_nginx.sh"
+ssh -p$REMOTE_PORT $REMOTE_HOST "sudo /opt/reload_nginx.sh >/dev/null 2>&1"
+if [ "$?" != "0" ]; then
+    echo "[!] Error reloading Nginx Config"
+    exit 1
+fi
 
 echo "[+] Flush varnish cache for domain"
 ssh -p$REMOTE_PORT $REMOTE_HOST "sudo /opt/flush_varnish.sh docs.sdj.pw"
