@@ -18,6 +18,8 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,6 +28,11 @@ jobs:
 
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      - name: Build contributors artifact
+        run: bash scripts/build-contributor-database.sh
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Build with VitePress
         run: make build
