@@ -15,6 +15,10 @@
         return { text, url } 
     });
 
+    import contributorData from '../contributor-db.json'
+    const contributors = computed(() => {
+        return contributorData[`src/${page.value.filePath}`]?.split(',') ?? [];
+    });
 </script>
 
 <template>
@@ -23,10 +27,62 @@
             <span class="vpi-history history-link-icon" />
             {{ historyLink.text }}
         </VPLink>
+
+        <p v-if="contributors.length > 0" class="contributors">Contributors: 
+            <div class="contributor" v-for="contributor in contributors">
+                <VPLink :href="`https://github.com/${contributor}`" :no-icon="true">
+                    {{ contributor }}
+                </VPLink>
+            </div>
+        </p>
     </div>
 </template>
 
 <style scoped>
+
+.history-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contributors {
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-2);
+    column-gap: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: end;
+}
+
+.contributor {
+    display: inline-block;
+}
+
+.contributors a {
+    --underline-color: var(--vp-c-text-2);
+    position: relative;
+    display: inline-block;
+}
+
+.contributors a:hover {
+    --underline-color: var(--vp-c-brand-1);
+    color: var(--vp-c-brand-1);
+}
+
+.contributors a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: var(--underline-color);
+    margin-top: -.45em;
+    opacity: .3;
+}
+
 .vpi-history {
     --icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhpc3RvcnkiPjxwYXRoIGQ9Ik0zIDEyYTkgOSAwIDEgMCA5LTkgOS43NSA5Ljc1IDAgMCAwLTYuNzQgMi43NEwzIDgiLz48cGF0aCBkPSJNMyAzdjVoNSIvPjxwYXRoIGQ9Ik0xMiA3djVsNCAyIi8+PC9zdmc+');
 }
@@ -40,7 +96,6 @@
   font-weight: 500;
   color: var(--vp-c-brand-1);
   transition: color 0.25s;
-  margin-left: auto;
 }
 
 .history-link-button:hover {
@@ -49,5 +104,16 @@
 
 .history-link-icon {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 639px) {
+    .history-row {
+        align-items: start;
+        flex-direction: column;
+    }
+    .contributors {
+        max-width: 100%;
+        justify-content: start;
+    }
 }
 </style>
