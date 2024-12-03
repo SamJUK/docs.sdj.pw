@@ -19,9 +19,6 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    environment:
-      name: ${{ github.ref == 'refs/heads/master' && 'production' || 'staging' }}
-      url: ${{ github.ref == 'refs/heads/master' && 'https://docs.sdj.pw/' || 'https://staging-docs.sdj.pw/' }}
     permissions:
       contents: read
     steps:
@@ -51,7 +48,9 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
-    environment: production
+    environment:
+      name: ${{ github.ref == 'refs/heads/master' && 'production' || 'staging' }}
+      url: ${{ github.ref == 'refs/heads/master' && 'https://docs.sdj.pw/' || 'https://staging-docs.sdj.pw/' }}
     steps:
       - uses: actions/checkout@master
 
