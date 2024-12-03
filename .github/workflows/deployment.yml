@@ -5,9 +5,10 @@ on:
   push:
     branches:
       - master
+      - staging
 
 concurrency:
-  group: "deploy"
+  group: ${{ github.ref == 'refs/heads/master' && 'production' || 'staging' }}
   cancel-in-progress: false
 
 defaults:
@@ -18,6 +19,9 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.ref == 'refs/heads/master' && 'production' || 'staging' }}
+      url: ${{ github.ref == 'refs/heads/master' && 'https://docs.sdj.pw/' || 'https://staging-docs.sdj.pw/' }}
     permissions:
       contents: read
     steps:
