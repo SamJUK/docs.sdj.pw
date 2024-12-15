@@ -16,6 +16,9 @@ Record ID is a little more tricky to obtain, as its not displayed anywhere withi
 ```sh
 export CF_API_TOKEN="xxx"
 export CF_ZONE_ID="xxx"
+```
+
+```sh
 curl -s -H "Content-Type: application/json" -H "Authorization: Bearer $CF_API_TOKEN" \
     "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/dns_records" | jq '.result .[] | {id, zone_id, name, type, content}'
 ```
