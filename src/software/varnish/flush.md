@@ -2,6 +2,12 @@
 
 We are going to be using primarily the `ban`command within the `varnishadm` tool. You want to run this command, while connecting to the server running Varnish.
 
+## Flushing the entire Cache
+
+```sh
+varnishadm "ban req.http.host ~ .*"
+```
+
 ## Flushing A Single Varnish Page
 If we want to flush a single page from varnish, we can filter on `req.url` which will be the URI of the page. For example if we want to purge the contact page, we could run the following
 ```sh
