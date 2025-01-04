@@ -53,15 +53,6 @@ export default defineConfig({
           { text: 'Bitbucket', collapsed: true, items: [
             { text: 'Renovate', link: '/general/bitbucket/renovate-mend' },
           ]},
-          { text: 'Sentry.io', collapsed: true, items: [
-            { text: 'Self Hosting', link: '/general/sentry/self-hosting' },
-            { text: 'Disk Space Cleanup', link: '/general/sentry/disk-space-cleanup' },
-          ]},
-          { text: 'Docker', collapsed: true, items: [
-            { text: 'General', link: '/general/docker/docker' },
-            { text: 'Orbstack', link: '/general/docker/orbstack' },
-          ]},
-          { text: 'NewRelic', link: '/general/newrelic' },
           { text: 'Block Tor Exit Routes', link: '/general/tor-block-exit-routes' },
           { text: 'CSP Reporting', link: '/general/csp-reporting' },
           { text: 'Powerline10k', link: '/general/p10k' },
@@ -81,6 +72,15 @@ export default defineConfig({
         text: 'Software',
         collapsed: true,
         items: [
+          { text: 'NewRelic', link: '/software/newrelic' },
+          { text: 'Sentry.io', collapsed: true, items: [
+            { text: 'Self Hosting', link: '/software/sentry/self-hosting' },
+            { text: 'Disk Space Cleanup', link: '/software/sentry/disk-space-cleanup' },
+          ]},
+          { text: 'Docker', collapsed: true, items: [
+            { text: 'General', link: '/software/docker/docker' },
+            { text: 'Orbstack', link: '/software/docker/orbstack' },
+          ]},
           { text: 'OpenVPN', collapsed: true, items: [
             { text: 'OpenVPN Installation', link: '/software/openvpn/installation' },
             { text: 'OpenVPN Split Routing', link: '/software/openvpn/split-routing' },
