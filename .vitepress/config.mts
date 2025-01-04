@@ -63,7 +63,8 @@ export default defineConfig({
           ]},
           { text: 'NewRelic', link: '/general/newrelic' },
           { text: 'Block Tor Exit Routes', link: '/general/tor-block-exit-routes' },
-          { text: 'CSP Reporting', link: '/general/csp-reporting'},
+          { text: 'CSP Reporting', link: '/general/csp-reporting' },
+          { text: 'Powerline10k', link: '/general/p10k' },
         ]
       },
       {
