@@ -1,10 +1,10 @@
-# Github Actions
+# Github Actions - SSH Config Location
 
-The root users home directory is not `/root/` but instead `/github/home/`
+You may expect the SSH config location for the root user to be under `/root` be default. Although this is not the case and any config you add to the root folder will be ignored.
 
-## SSH Key / Known Hosts not working within Containers
+The root users home directory is actually `/github/home/` instead of `/root`.
 
-You may run into issues of your SSH key / Known hosts entries not working. One reason for this is, the place you are writing the keys, is not a registered path for SSH.
+Which is why you may run into issues, where your SSH key / Known hosts entries are not working. Since the place you are writing the keys, is not a registered path for SSH.
 
 ### Debug
 You can add 2 new steps to confirm what paths SSH is looking at, as well as the real path of the relative home directory.

@@ -46,7 +46,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Github', collapsed: true, items: [
-            { text: 'Actions', link: '/general/github/actions' },
+            { text: 'Actions - Standard Streams', link: '/general/github/actions/steps-missing-standard-streams' },
+            { text: 'Actions - SSH Config', link: '/general/github/actions/ssh-config' },
             { text: 'Artifact Cleanup', link: '/general/github/cleanup-artifacts' },
             { text: 'Dependabot', link: '/general/github/dependabot' },
           ]},
