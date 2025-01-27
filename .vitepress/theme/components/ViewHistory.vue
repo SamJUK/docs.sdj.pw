@@ -12,12 +12,12 @@
         } else {
             url = pattern.replace(/:path/g, page.value.filePath)
         }
-        return { text, url } 
+        return { text, url }
     });
 
     import contributorData from '../contributor-db.json'
     const contributors = computed(() => {
-        return contributorData[`src/${page.value.filePath}`]?.split(',') ?? [];
+        return contributorData[`src/${page.value.filePath}`] ?? [];
     });
 </script>
 
@@ -28,10 +28,14 @@
             {{ historyLink.text }}
         </VPLink>
 
-        <p v-if="contributors.length > 0" class="contributors">Contributors: 
-            <div class="contributor" v-for="contributor in contributors">
-                <VPLink :href="`https://github.com/${contributor}`" :no-icon="true">
-                    {{ contributor }}
+        <p v-if="contributors.length > 0" class="contributors">Contributors:
+            <div class="contributor" v-for="(contributor, i) in contributors" :key="contributor.username">
+                <VPLink :href="`https://github.com/${contributor.username}`" :no-icon="true">
+                    {{ contributor.username }}
+                    <img :src="contributor.avatar" :style="{
+                      marginRight: `-${i * 4}px`,
+                      opacity: `${100 - contributors.length * 15 + 15 * i}%`
+                    }"/>
                 </VPLink>
             </div>
         </p>
@@ -56,6 +60,9 @@
     flex-wrap: wrap;
     max-width: 400px;
     justify-content: end;
+    align-items: baseline;
+    padding-right: 40px;
+    position: relative;
 }
 
 .contributor {
@@ -64,7 +71,6 @@
 
 .contributors a {
     --underline-color: var(--vp-c-text-2);
-    position: relative;
     display: inline-block;
 }
 
@@ -81,6 +87,19 @@
     background: var(--underline-color);
     margin-top: -.45em;
     opacity: .3;
+}
+
+.contributor img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    border: 1px solid #1b1b1f;
+    border-radius: 100%;
+}
+.contributor:not(:last-child) img {
+    opacity: .75;
 }
 
 .vpi-history {
