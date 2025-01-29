@@ -49,6 +49,7 @@ export default defineConfig({
             { text: 'Actions - Standard Streams', link: '/general/github/actions/steps-missing-standard-streams' },
             { text: 'Actions - SSH Config', link: '/general/github/actions/ssh-config' },
             { text: 'Artifact Cleanup', link: '/general/github/cleanup-artifacts' },
+            { text: 'Environment Cleanup', link: '/general/github/cleanup-environments' },
             { text: 'Dependabot', link: '/general/github/dependabot' },
           ]},
           { text: 'Bitbucket', collapsed: true, items: [
