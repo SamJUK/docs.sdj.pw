@@ -97,6 +97,9 @@ export default defineConfig({
             { text: 'Nginx Replace Polyfill.io', link: '/software/nginx/replace-polyfill-io' },
             { text: 'Nginx Rate Limiting', link: '/software/nginx/rate-limiting' }
           ]},
+          { text: 'PHP', collapsed: true, items: [
+            { text: 'General', link: '/software/php/general' }
+          ]},
           { text: 'Composer', collapsed: true, items: [
             { text: 'Composer Patches', link: '/software/composer/patches' },
             { text: 'Composer Artifacts', link: '/software/composer/artifacts' }
