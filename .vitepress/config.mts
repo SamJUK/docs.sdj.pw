@@ -125,10 +125,11 @@ export default defineConfig({
         text: 'Linux',
         collapsed: true,
         items: [
-          { text: 'Email Alerting', items: [
+          { text: 'Alerting', items: [
             { text: 'Low Disk', link: '/linux/email-alerts/disk-space' },
             { text: 'High Compute', link: '/linux/email-alerts/high-compute' },
             { text: 'Load Graphs', link: '/linux/email-alerts/load-graphs' },
+            { text: 'SVC Watchdog', link: '/linux/email-alerts/service-watchdog' },
           ]},
           { text: 'Image Optimisation', link: '/linux/image-optimisation' },
           { text: 'Ubuntu', link: '/linux/ubuntu' }
