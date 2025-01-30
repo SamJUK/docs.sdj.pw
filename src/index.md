@@ -4,6 +4,8 @@ The goal of this platform is provide an centralised knowledge base, primarily fo
 
 Everything is open-source, and public contributions are encouraged. Read more over on the [Github Repository](https://www.github.com/samjuk/docs.sdj.pw).
 
+> **NOTE:** Whilst we still figuring out the best categorisation for content, some URLs may change. We will do our best to ensure accurate 301s are in place.
+
 ## Custom Search Engine
 
 If you find yourself referring to this site a fair bit. I would suggest configuring it as a custom search engine in your browser. Which allows you to search this site directly from the omnibar. Similar to over on my Blog at [sdj.pw](https://www.sdj.pw/)
