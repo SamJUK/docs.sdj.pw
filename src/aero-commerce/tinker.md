@@ -12,4 +12,7 @@ $user->setPasswordAttribute('Password123!');
 $user->save();
 ```
 
-
+## Test Mail
+```php
+Mail::send([], [], function($msg) { $msg->to('admin@example.com')->subject('Test Mail')->setBody('test mail'); });
+```
