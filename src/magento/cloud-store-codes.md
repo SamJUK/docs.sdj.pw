@@ -4,6 +4,8 @@ Updated Adobe Cloud `magento-vars.php`, utilising the match functionality from P
 
 ```php
 <?php
+if ($_SERVER["MAGE_RUN_TYPE"] || $_SERVER["MAGE_RUN_CODE"]) { return; }
+
 $host = $_SERVER['HTTP_HOST'] ?? '';
 $ephemeralHostScope = fn(string $host): ?string => substr_count($host, '.') === 4 ? strtok($host, '.') : null;
 
