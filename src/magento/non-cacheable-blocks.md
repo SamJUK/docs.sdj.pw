@@ -1,8 +1,36 @@
 # Identify Uncacheable Blocks
 
-Short snippet to include on any page to identify any uncacheable blocks being loaded. Usually I dump this into the header or logo .phtml files. 
+## Find / Grep XML files
 
-Future task to convert into a separate module or potentially a standalone patch file. 
+Usually the problem is within 3rd party XML layout files. We can quickly search these with the following grep.
+
+If you want to include core code, you can remove the not segment.
+
+```sh
+find vendor app/code app/design -not \( -path vendor/magento -prune \)  -name \*.xml -exec grep -li "cacheable.*false" {} +
+```
+
+## Logger - Patch File
+
+Simple patch file, to write uncacheable blocks to the log file. This should cover both uncachable being set within the XML, as well as being modified by plugins.
+
+```diff
+--- vendor/magento/framework/View/Layout.php
++++ vendor/magento/framework/View/Layout.php
+@@ -1128,7 +1128,7 @@
+             $blockName = $element->getBlockName();
+             if ($blockName !== false && $this->structure->hasElement($blockName)) {
+                 $cacheable = false;
+-                break;
++                $this->logger->info("Uncacheable Block: \"{$blockName}\" for handles: " . json_encode($this->getUpdate()->getHandles()));
+             }
+         }
+
+```
+
+## Template Layer
+
+Short snippet to include on any page to identify any uncacheable blocks being loaded.
 
 ![Image of the uncachable blocks DOM element the code snippet adds](/images/uncacheable-blocks.jpg)
 
