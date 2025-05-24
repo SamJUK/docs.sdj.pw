@@ -87,6 +87,7 @@ export default defineConfig({
             { text: 'OpenVPN Installation', link: '/software/openvpn/installation' },
             { text: 'OpenVPN Split Routing', link: '/software/openvpn/split-routing' },
             { text: 'OpenVPN Static Client IPs', link: '/software/openvpn/static-client-ips' },
+            { text: 'OpenVPN Google SSO', link: '/software/openvpn/google-sso' },
           ]},
           { text: 'Varnish', collapsed: true, items: [
             { text: 'Flushing Varnish', link: '/software/varnish/flush' },
