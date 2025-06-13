@@ -96,7 +96,8 @@ export default defineConfig({
           ]},
           { text: 'Nginx', collapsed: true, items: [
             { text: 'Nginx Replace Polyfill.io', link: '/software/nginx/replace-polyfill-io' },
-            { text: 'Nginx Rate Limiting', link: '/software/nginx/rate-limiting' }
+            { text: 'Nginx Rate Limiting', link: '/software/nginx/rate-limiting' },
+            { text: 'Nginx X-Robots Disable Indexing', link: '/software/nginx/robots.md'}
           ]},
           { text: 'PHP', collapsed: true, items: [
             { text: 'General', link: '/software/php/general' }
