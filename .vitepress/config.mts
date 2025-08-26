@@ -92,7 +92,8 @@ export default defineConfig({
           { text: 'Varnish', collapsed: true, items: [
             { text: 'Flushing Varnish', link: '/software/varnish/flush' },
             { text: 'Reloading the VCL', link: '/software/varnish/reloading-the-vcl' },
-            { text: 'Debug Cache Performance', link: '/software/varnish/debug-cache-performance' }
+            { text: 'Debug Cache Performance', link: '/software/varnish/debug-cache-performance' },
+            { text: '403 Header Too Large', link: '/software/varnish/403-headers-too-large' },
           ]},
           { text: 'Nginx', collapsed: true, items: [
             { text: 'Nginx Replace Polyfill.io', link: '/software/nginx/replace-polyfill-io' },
