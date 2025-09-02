@@ -89,6 +89,9 @@ export default defineConfig({
             { text: 'OpenVPN Static Client IPs', link: '/software/openvpn/static-client-ips' },
             { text: 'OpenVPN Google SSO', link: '/software/openvpn/google-sso' },
           ]},
+          { text: 'NordVPN', collapsed: true, items: [
+            { text: 'Auto Rotating Connection', link: '/software/nordvpn/automatic-rotating' },
+          ]},
           { text: 'Varnish', collapsed: true, items: [
             { text: 'Flushing Varnish', link: '/software/varnish/flush' },
             { text: 'Reloading the VCL', link: '/software/varnish/reloading-the-vcl' },
