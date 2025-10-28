@@ -63,7 +63,8 @@ export default defineConfig({
       {
         text: 'Operations', collapsed: true, items: [
           { text: 'Ansible', collapsed: true, items: [
-            { text: 'Provisioning', link: 'operations/ansible/provisioning' }
+            { text: 'Provisioning', link: 'operations/ansible/provisioning' },
+            { text: 'Patching', link: 'operations/ansible/patching' }
           ]},
           { text: 'Terraform', collapsed: true, items: [
             { text: 'Cloudflare', link: 'operations/terraform/cloudflare' }
@@ -155,6 +156,7 @@ export default defineConfig({
             { text: 'Magepack Javascript Bundling', link: '/magento-magepack-javascript-bundling' },
             { text: 'Critical CSS', link: '/magento-critical-css' },
             { text: 'Cleanup Spam Customer Accounts', link: '/magento/spam-account-cleanup' },
+            { text: 'Patching at Scale', link: '/magento/patching' }
           ]},
           { text: 'Development', collapsed: true, items: [
             { text: 'App/Code', link: '/magento/app-code' },
