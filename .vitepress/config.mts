@@ -169,7 +169,8 @@ export default defineConfig({
             { text: 'Setting Store Codes', link: '/magento/cloud-store-codes' }
           ]},
           { text: 'Security', collapsed: true, items: [
-            { text: 'CosmicSting', link: '/magento/cosmicsting'},
+            { text: 'CosmicSting (CVE-2024-34102)', link: '/magento/cosmicsting'},
+            { text: 'Session Reaper (CVE-2025-54236)', link: '/magento/session-reaper' }
           ]}
         ]
       },
