@@ -1,7 +1,16 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
+  transformHead: ({ pageData }) => {
+    const head: HeadConfig[] = []
+    head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }]);
+    head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }]);
+    head.push(['meta', { property: 'description', content: pageData.frontmatter.description }]);
+    return head
+  },
+
   title: "SDJ Docs",
   description: "Knowledge Base",
   lastUpdated: true,
