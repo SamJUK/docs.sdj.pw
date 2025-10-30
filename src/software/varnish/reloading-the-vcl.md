@@ -1,3 +1,6 @@
+---
+description: Varnish VCL reloading techniques to update configuration without losing cache data through service restart.
+---
 # Reloading the Varnish VCL
 
 It is common to restart varnish entirely after updating the VCL, although, restarting the service looses the entire cache as well.

@@ -1,3 +1,6 @@
+---
+description: Renovate Mend configuration for Bitbucket automatic dependency updates and package version management.
+---
 # Renovate Mend - Bitbucket
 
 Renovate is similar to dependabot, and allows us to configure automatic version updates for our packages. And Mend is the hosted app version of it. 

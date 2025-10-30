@@ -1,3 +1,6 @@
+---
+description: Magento patching strategies at scale using Ansible and Composer for emergency and maintenance patches.
+---
 # Magento - Patching
 
 Patching Magento at scale does not have to be difficult, using a combination of Ansible and Composer packages, we can achieve both emergency patching and persistent patches at scale with minimal time/cost.

@@ -1,3 +1,6 @@
+---
+description: CosmicSting CVE-2024-34102 security vulnerability guide for Magento and Adobe Commerce stores with detection and mitigation steps.
+---
 # Cosmicsting CVE-2024-34102
 CosmicSting (aka CVE-2024-34102) is the worst bug to hit Magento and Adobe Commerce stores in two years. Allowing read access to private files containing system credentials. And paired with other exploits, RCE can be achevied granting an attacker full system control.
 

@@ -1,3 +1,6 @@
+---
+description: Nginx configuration for replacing compromised Polyfill.io CDN after malware supply chain attack.
+---
 # Replacing Polyfill.io with Nginx
 
 The Polyfill.io CDN was taken over by a malicious party, which then started serving Malware from it. See: <br> https://sansec.io/research/polyfill-supply-chain-attack

@@ -1,3 +1,6 @@
+---
+description: Linux system load monitoring with email graph generation for performance analysis and alerts.
+---
 # Load Graph Emails
 
 ```sh

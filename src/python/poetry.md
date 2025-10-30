@@ -1,3 +1,6 @@
+---
+description: Python Poetry dependency management and packaging tool installation, configuration, and usage guide.
+---
 # Poetry
 
 Poetry is a dependency management & packaging tool. 

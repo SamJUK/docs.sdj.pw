@@ -1,3 +1,6 @@
+---
+description: PHP SPX profiler installation script for Magento Warden development environments with performance monitoring.
+---
 # Install PHP SPX in a Warden Environment
 
 ```sh

@@ -1,3 +1,6 @@
+---
+description: Ubuntu Linux troubleshooting and configuration guides for common repository and package management issues.
+---
 # Ubuntu
 
 ## Changed Repository URL

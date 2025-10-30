@@ -1,3 +1,6 @@
+---
+description: Tor exit node blocking strategies using Cloudflare and server-level configurations for enhanced security.
+---
 # Block Tor Exit Routes
 
 First, you can block this traffic via Cloudflare by clicking some buttons. See the following post. <br> https://community.cloudflare.com/t/tor-traffic-blocking/396979/3

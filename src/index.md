@@ -1,3 +1,6 @@
+---
+description: Centralized knowledge base and documentation platform with technical guides, tutorials, and best practices for development and operations.
+---
 # SDJ Docs
 
 The goal of this platform is provide an centralised knowledge base, primarily for my self and colleagues. Although I am sure, some of this will be useful to the wider community.

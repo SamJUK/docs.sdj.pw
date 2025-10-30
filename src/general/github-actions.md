@@ -1,3 +1,6 @@
+---
+description: GitHub Actions troubleshooting guide for SSH keys, home directory issues, and container configurations.
+---
 # Github Actions
 
 The root users home directory is not `/root/` but instead `/github/home/`

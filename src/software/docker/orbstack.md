@@ -1,3 +1,6 @@
+---
+description: OrbStack Docker alternative evaluation and migration guide for macOS development environments.
+---
 # Orbstack
 
 ::: info

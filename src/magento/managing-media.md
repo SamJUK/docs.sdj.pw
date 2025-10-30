@@ -1,3 +1,6 @@
+---
+description: Magento media management strategies for downstream environments using union file systems and database anonymization.
+---
 # Managing Media
 
 Managing media in downstream environments can be difficult when regularly using anonymised production databases.

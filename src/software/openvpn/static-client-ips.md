@@ -1,3 +1,6 @@
+---
+description: OpenVPN static IP assignment configuration for consistent client internal IP addresses.
+---
 # OpenVPN Static Client IPs
 
 We can make sure the clients connection to the VPN are always assigned the same internal IP by setting the following property within the `server.conf` file.

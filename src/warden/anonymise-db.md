@@ -1,3 +1,6 @@
+---
+description: Warden database anonymization guide using Smile-SA GDPR Dump for secure development environments.
+---
 # Anonymising Warden Databases
 
 Now that [masquerade](https://github.com/elgentos/masquerade) is abandoned, we can use [Smile-SA GDPR Dump](https://github.com/Smile-SA/gdpr-dump).

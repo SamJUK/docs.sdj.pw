@@ -1,3 +1,6 @@
+---
+description: GitHub Actions troubleshooting guide for capturing stdout and stderr outputs in workflow steps.
+---
 # Github Actions - Steps missing Standard Streams
 
 One might assume a simple run step, would include the stdout and stderr outputs. But they would be wrong.

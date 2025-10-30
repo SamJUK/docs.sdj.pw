@@ -1,3 +1,6 @@
+---
+description: GitHub Actions SSH configuration troubleshooting for correct file paths and root user directory issues.
+---
 # Github Actions - SSH Config Location
 
 You may expect the SSH config location for the root user to be under `/root` be default. Although this is not the case and any config you add to the root folder will be ignored.

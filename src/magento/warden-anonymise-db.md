@@ -1,3 +1,6 @@
+---
+description: Magento Warden database anonymization using Smile-SA GDPR Dump to replace abandoned masquerade tool.
+---
 # Anonymising Warden Databases
 
 Now that [masquerade](https://github.com/elgentos/masquerade) is abandoned, we can use [Smile-SA GDPR Dump](https://github.com/Smile-SA/gdpr-dump).

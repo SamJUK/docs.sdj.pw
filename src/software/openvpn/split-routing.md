@@ -1,3 +1,6 @@
+---
+description: OpenVPN split routing configuration for selective traffic routing and development team optimization.
+---
 # OpenVPN Split Routing
 
 When setting up a VPN you have the option to either route all traffic through, or only route specific traffic through it. Some of the benefits with split routing within a development team context are:

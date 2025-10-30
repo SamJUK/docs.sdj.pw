@@ -1,3 +1,6 @@
+---
+description: Composer artifact repository setup for private package distribution with Git LFS considerations.
+---
 # Composer Artifacts
 
 ::: tip

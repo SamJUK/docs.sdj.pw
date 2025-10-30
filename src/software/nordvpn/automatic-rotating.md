@@ -1,3 +1,6 @@
+---
+description: NordVPN automatic connection rotation script with cron and systemd timer configuration for location switching.
+---
 # NordVPN rotating connection 
 
 Script to rotate Nordvpn connection location. Can be configured as a Cron / Systemd timer for automatic rotating.

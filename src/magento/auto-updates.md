@@ -1,3 +1,6 @@
+---
+description: Automated Magento update strategies using Dependabot, continuous deployment, and E2E testing workflows.
+---
 # Automatic Magento Updates
 
 Automatic updates are apart of a wider development strategy, that involves ephemeral hosts, E2E testing, continuous deployment etc.

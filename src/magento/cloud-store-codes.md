@@ -1,3 +1,6 @@
+---
+description: Adobe Commerce Cloud store code configuration using PHP8 match functionality for CNAMEs and subdomain routing.
+---
 # Adobe Cloud Store Codes
 
 Updated Adobe Cloud `magento-vars.php`, utilising the match functionality from PHP8. Supporting CNAMEs, magentosite.cloud and store code subdomains.

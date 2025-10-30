@@ -1,3 +1,6 @@
+---
+description: Varnish 403 Headers Too Large error troubleshooting for Magento cache tags and CSP header limits.
+---
 # Varnish 403 - Headers Too Large
 
 Varnish has a set maximum length value for headers accepted, this can be easily overloaded by Magento cache tags or CSP allow headers.

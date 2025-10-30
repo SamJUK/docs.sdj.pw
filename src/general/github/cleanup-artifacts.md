@@ -1,3 +1,6 @@
+---
+description: GitHub Actions artifact cleanup automation using GitHub CLI for storage management and workflow optimization.
+---
 # Github Artifact Cleanup
 
 ::: tip

@@ -1,3 +1,6 @@
+---
+description: Sentry.io disk space management and cleanup strategies for preventing storage issues in self-hosted instances.
+---
 # Disk Space Cleanup - Sentry.io
 
 One lesson learned the hard way with sentry, is the importance of ample free disk space. Sentry.io should handle cleaning up old data. Although it seem to be a bit hit/miss.

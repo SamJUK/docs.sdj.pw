@@ -1,3 +1,6 @@
+---
+description: Linux service monitoring script with email alerts for automatic detection of stopped services and system health.
+---
 # Service Watchdog Alerts
 The service watchdog script, monitors a preset list of installed software. And if its detected as not running, triggers an alert.
 

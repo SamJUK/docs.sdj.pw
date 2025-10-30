@@ -1,3 +1,6 @@
+---
+description: CLI bulk image optimization tools and techniques for web performance with format conversion and compression.
+---
 # CLI Bulk Image Optimisation
 
 ::: info

@@ -1,3 +1,6 @@
+---
+description: PHP SPX profiler installation and configuration guide for Warden development environments with built-in UI.
+---
 # Install PHP SPX in a Warden Environment
 
 PHP SPX is a simple, free and open source profiler. It covers both FPM and CLI requests, and provides a built-in UI to visualise the generated reports.

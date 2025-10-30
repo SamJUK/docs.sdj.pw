@@ -1,3 +1,6 @@
+---
+description: Self-hosting Sentry.io error monitoring platform with PostgreSQL database management and disk space considerations.
+---
 # Self Hosting Sentry.io
 
 ::: warning

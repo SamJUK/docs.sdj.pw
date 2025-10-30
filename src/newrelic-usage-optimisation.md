@@ -1,4 +1,5 @@
 ---
+description: New Relic monitoring and performance optimization techniques for application performance management.
 outline: deep
 ---
 

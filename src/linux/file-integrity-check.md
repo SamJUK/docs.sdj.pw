@@ -1,3 +1,6 @@
+---
+description: Linux file integrity checking using MD5 hashes to detect unauthorized file modifications and security breaches.
+---
 # File Integrity Check
 
 The purpose of file integrity checking, is ensure the content of a file has not been unexpectedly modified. 

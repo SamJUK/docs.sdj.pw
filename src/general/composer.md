@@ -1,3 +1,6 @@
+---
+description: Composer dependency management for PHP projects including patches, configuration, and best practices.
+---
 # Composer
 
 Composer is a dependency manager for PHP projects.

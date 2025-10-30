@@ -1,4 +1,5 @@
 ---
+description: VitePress runtime API examples demonstrating useData() and theme data access in markdown and Vue files.
 outline: deep
 ---
 

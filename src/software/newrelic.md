@@ -1,3 +1,6 @@
+---
+description: New Relic optimization guide for reducing usage costs by disabling unnecessary tracing data in PHP applications.
+---
 # Optimise Newrelic Usage
 
 A very large portion of typical newrelic usage is Tracing data. In most simple use cases of newrelic (Dashboards, APM etc) you do not need this data. You should be able to confirm this by looking at your usage graph.

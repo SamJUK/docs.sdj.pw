@@ -1,3 +1,6 @@
+---
+description: Magento spam customer account identification and cleanup strategies for e-commerce security management.
+---
 # Magento Spam Account Cleanup
 
 No one size fits all for identifying spam customers. But here are some common identifiers.

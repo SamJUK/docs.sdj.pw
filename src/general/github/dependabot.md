@@ -1,3 +1,6 @@
+---
+description: GitHub Dependabot configuration for automated dependency updates and security vulnerability management.
+---
 # Dependabot
 
 Dependabot handles alerting and creating pull requests for outdated packages.

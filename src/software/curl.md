@@ -1,3 +1,6 @@
+---
+description: cURL command line tool examples and techniques for HTTP requests, header manipulation, and debugging.
+---
 # Curl output
 
 

@@ -1,3 +1,6 @@
+---
+description: Nginx rate limiting configuration guide with HTTP 429 responses and dry-run testing for traffic protection.
+---
 # Nginx RateLimiting
 
 The default nginx status code for the limit is 503, it is important to change this to [HTTP 429 Too Many Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429). HTTP 429 is the standard rate limiting code, and should prevent any negative indexing results with search engines, and as a bonus any bots should slow their crawl rate (if they respect the response code).

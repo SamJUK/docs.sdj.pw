@@ -1,3 +1,6 @@
+---
+description: Linux disk space monitoring script with email alerts for proactive system maintenance and storage management.
+---
 # Disk Space Alerts
 
 ```sh

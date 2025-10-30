@@ -1,3 +1,6 @@
+---
+description: Warden development environment setup for WordPress using Roots Bedrock distribution with configuration tweaks.
+---
 # Warden Development
 
 Using Warden to run Wordpress through the [Roots Bedrock](https://roots.io/bedrock/) distribution, requires a few configuration tweaks to get started.

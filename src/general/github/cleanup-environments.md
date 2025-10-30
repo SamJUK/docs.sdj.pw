@@ -1,3 +1,6 @@
+---
+description: GitHub ephemeral environments cleanup automation for infrastructure decommissioning and resource management.
+---
 # Github Environments Cleanup
 
 If you are using Ephmeral Environments on Github. You likely will want to delete the environments once your done, and decomissioned the related infrastructure.

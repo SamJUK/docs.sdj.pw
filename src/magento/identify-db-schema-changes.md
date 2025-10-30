@@ -1,3 +1,6 @@
+---
+description: Magento database schema change detection and troubleshooting guide for setup upgrade issues.
+---
 # Identifying DB Schema Changes
 
 Sometimes you run into a situation where even after a setup upgrade, the database state is still not up to date.

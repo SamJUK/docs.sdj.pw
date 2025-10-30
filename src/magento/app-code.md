@@ -1,3 +1,6 @@
+---
+description: Magento 2 app/code directory structure and module development guidelines for custom code organization.
+---
 # Magento 2 App/Code
 
 The `app/code` folder in Magento 2 is where you can put module source code.

@@ -1,3 +1,6 @@
+---
+description: Magento scratch file template for persistent code execution beyond single n98-magerun dev:console commands.
+---
 # Magento Scratch File
 
 Scratch file template for when you need a bit of persistence or to run a block of code instead of single commands with `n98-magerun dev:console`.

@@ -1,3 +1,6 @@
+---
+description: Linux CPU usage monitoring script with email alerts for high compute resource detection and system performance.
+---
 # CPU Usage Alerts
 
 ```sh

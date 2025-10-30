@@ -1,3 +1,6 @@
+---
+description: Terraform configuration guide for managing Cloudflare resources and importing existing DNS records.
+---
 # Terraform - Cloudflare
 
 ## Importing Existing Records

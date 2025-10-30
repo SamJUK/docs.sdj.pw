@@ -1,3 +1,6 @@
+---
+description: Ansible infrastructure provisioning with cloud-config and SSH key configuration for automated server setup.
+---
 # Ansible
 
 ## Provisioning

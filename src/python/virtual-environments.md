@@ -1,3 +1,6 @@
+---
+description: Python virtual environment management guide including creation, activation, and best practices for project isolation.
+---
 # Managing Python Virtual Environments
 
 Python offers a virtual environment module which lets us install project based requirements instead of maintain all requirements in a global scope.

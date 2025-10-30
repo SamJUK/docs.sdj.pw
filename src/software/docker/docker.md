@@ -1,3 +1,6 @@
+---
+description: Docker troubleshooting guide for macOS engine startup issues and network endpoint conflicts.
+---
 # Docker
 
 ## MacOS Docker Engine Refusing to Start

@@ -1,3 +1,6 @@
+---
+description: PHP development environment setup and configuration guide including Docker quick start examples.
+---
 # PHP - General
 
 ## Quick Start - Docker Environment

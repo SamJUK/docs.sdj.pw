@@ -1,3 +1,6 @@
+---
+description: Varnish cache flushing techniques using varnishadm ban commands for selective and complete cache invalidation.
+---
 # Varnish Flush
 
 We are going to be using primarily the `ban`command within the `varnishadm` tool. You want to run this command, while connecting to the server running Varnish.

@@ -1,3 +1,6 @@
+---
+description: OpenVPN server installation guide using automated installation scripts for simplified VPN setup.
+---
 # OpenVPN Installation
 
 You can simplify OpenVPN installation by using the OpenVPN installation script by NYR https://github.com/Nyr/openvpn-install
