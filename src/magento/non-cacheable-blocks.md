@@ -1,3 +1,6 @@
+---
+description: Magento 2 uncacheable block identification and debugging techniques for performance optimization and caching issues.
+---
 # Identify Uncacheable Blocks
 
 ## Find / Grep XML files

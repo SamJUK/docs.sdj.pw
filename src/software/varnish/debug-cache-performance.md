@@ -1,3 +1,6 @@
+---
+description: Varnish cache performance debugging techniques for monitoring URL age, cache hits, and optimization strategies.
+---
 # Debugging Varnish Cache Performance
 
 Some steps to take to help debug cache performance issues, and if Varnish is configured optimally for the current dataset.

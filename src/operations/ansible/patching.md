@@ -1,3 +1,6 @@
+---
+description: Ansible infrastructure patching automation for applying security patches at scale across multiple hosts.
+---
 # Ansible Patching
 
 Ansible makes patching infrastructure at scale easy. Especially if we just need to apply a `.patch` unconditionally across writeable hosts.

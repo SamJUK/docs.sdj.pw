@@ -1,3 +1,6 @@
+---
+description: Magento 2 static content deployment optimization techniques for faster build processes and compilation performance.
+---
 # Optimise your Magento 2 Build Process
 
 ::: info

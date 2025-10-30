@@ -1,3 +1,6 @@
+---
+description: OpenVPN Google SSO integration setup using OAuth2 authentication service and reverse proxy configuration.
+---
 # OpenVPN Google SSO
 
 There are two main components to adding SSO to OpenVPN CE. The Authentication service, and a reverse proxy.

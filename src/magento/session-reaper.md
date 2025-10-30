@@ -1,3 +1,6 @@
+---
+description: Session Reaper CVE-2025-54236 security vulnerability guide for Magento unauthenticated RCE detection and patching.
+---
 # Session Reaper (CVE-2025-54236)
 
 Session Reaper (CVE-2025-54236) is the latest major security vulnerability that offers unauthenticated RCE in the Magento ecosystem.
