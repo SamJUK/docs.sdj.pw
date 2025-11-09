@@ -1,11 +1,13 @@
 ---
-description: cURL command line tool examples and techniques for HTTP requests, header manipulation, and debugging.
+description: Collection of Fluentbit Parsers and Configuration
 ---
-# Fluentbit Parsers
+# Fluentbit
+
+## Parsers
 
 General collection of Fluentbit parsers
 
-## Fail2Ban
+### Fail2Ban
 
 ```
 [PARSER]
@@ -16,7 +18,7 @@ General collection of Fluentbit parsers
     Time_Format %Y-%m-%d %H:%M:%S,%L
 ```
 
-## Auth
+### Auth
 
 ```
 [PARSER]

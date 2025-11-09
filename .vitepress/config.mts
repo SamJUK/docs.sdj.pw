@@ -136,7 +136,7 @@ export default defineConfig({
             { text: 'Composer Artifacts', link: '/software/composer/artifacts' }
           ]},
           { text: 'Curl', link: '/software/curl' },
-          { text: 'Fluentbit', link: '/software/fluentbit/parsers' },
+          { text: 'Fluentbit', link: '/software/fluentbit' },
         ]
       },
       { text: 'Warden', collapsed: true, items: [
