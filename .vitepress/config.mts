@@ -137,6 +137,7 @@ export default defineConfig({
           ]},
           { text: 'Curl', link: '/software/curl' },
           { text: 'Fluentbit', link: '/software/fluentbit' },
+          { text: 'Fail2Ban', link: '/software/fail2ban' }
         ]
       },
       { text: 'Warden', collapsed: true, items: [
