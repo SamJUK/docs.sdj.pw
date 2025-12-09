@@ -188,6 +188,7 @@ export default defineConfig({
             { text: 'App/Code', link: '/magento/app-code' },
           ]},
           { text: 'Debugging', collapsed: true, items: [
+            { text: 'JS Components DevTools', link: '/magento/debugging-javascript-components-devtools' },
             { text: 'Identify DB Schema Changes', link: '/magento/identify-db-schema-changes' },
             { text: 'Find noncacheable blocks', link: '/magento/non-cacheable-blocks' },
           ]},
