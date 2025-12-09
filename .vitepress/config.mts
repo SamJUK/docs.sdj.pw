@@ -179,9 +179,9 @@ export default defineConfig({
             { text: 'Automatic Updates', link: '/magento/auto-updates' },
             { text: 'Optimise SCD Build Process', link: '/magento/optimise-scd-build-process' },
             { text: 'Managing Media', link: '/magento/managing-media' },
-            { text: 'Magepack Javascript Bundling', link: '/magento-magepack-javascript-bundling' },
+            { text: 'Magepack Bundling', link: '/magento-magepack-javascript-bundling' },
             { text: 'Critical CSS', link: '/magento-critical-css' },
-            { text: 'Cleanup Spam Customer Accounts', link: '/magento/spam-account-cleanup' },
+            { text: 'Cleanup Spam Customers', link: '/magento/spam-account-cleanup' },
             { text: 'Patching at Scale', link: '/magento/patching' }
           ]},
           { text: 'Development', collapsed: true, items: [
