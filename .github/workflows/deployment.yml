@@ -43,6 +43,7 @@ jobs:
         with:
           name: vitepress-dist
           path: ./.vitepress/dist
+          include-hidden-files: true
 
   deploy:
     name: Deploy
