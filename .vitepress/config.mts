@@ -182,7 +182,8 @@ export default defineConfig({
             { text: 'Magepack Bundling', link: '/magento-magepack-javascript-bundling' },
             { text: 'Critical CSS', link: '/magento-critical-css' },
             { text: 'Cleanup Spam Customers', link: '/magento/spam-account-cleanup' },
-            { text: 'Patching at Scale', link: '/magento/patching' }
+            { text: 'Patching at Scale', link: '/magento/patching' },
+            { text: 'NoIndex via CLI', link: '/magento/no-index' }
           ]},
           { text: 'Development', collapsed: true, items: [
             { text: 'App/Code', link: '/magento/app-code' },
