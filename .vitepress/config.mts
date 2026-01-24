@@ -2,9 +2,46 @@ import { defineConfig, HeadConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-
   transformHead: ({ pageData, head }) => {
     const additionalHead: HeadConfig[] = []
+
+    // Canonical URL
+    const canonicalUrl = `https://docs.sdj.pw/${pageData.relativePath}`
+           .replace(/index\.md$/, '')
+           .replace(/\.md$/, '')
+    additionalHead.push(['link', { rel: 'canonical', href: canonicalUrl }]);
+
+    // Article Schema.org JSON-LD
+    additionalHead.push([
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": pageData.title,
+      "description": pageData.description,
+      "url": canonicalUrl,
+      "dateModified": new Date().toISOString(),
+      "author": {
+        "@type": "Person",
+        "name": "Sam James",
+        "url": "https://www.sdj.pw/about/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.sdj.pw/images/scout-profile.png",
+          "width": 800,
+          "height": 800
+        },
+        "sameAs": [
+          "https://github.com/samjuk",
+          "https://linkedin.com/in/samjuk"
+        ]
+      }
+    })
+    ]);
+
+
+    // Open Graph Tags
     const frontmatter = pageData?.frontmatter;
     if (frontmatter) {
       if (frontmatter.title) {
@@ -30,6 +67,7 @@ export default defineConfig({
   description: "Knowledge Base",
   lastUpdated: true,
   srcDir: './src',
+  cleanUrls: false,
   sitemap: {
     hostname: 'https://docs.sdj.pw'
   },
