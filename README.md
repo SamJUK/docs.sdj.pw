@@ -1,12 +1,14 @@
+# 🚧 This repo is archived
+
+This project has moved to my main website.
+This repository is read-only and kept for historical reference.
+
+👉 **New Home:** https://www.samdjames.uk/docs/
+
+👉 **New Code:** https://github.com/samjuk/samdjames.uk
+
+
 # DOCS.SDJ.PW
-
-> ⚠️ **Archived repository**
->
-> This project has been migrated to my main website: https://www.samdjames.uk/docs/
-> The source code is now located within https://github.com/samjuk/samdjames.uk
-> This repo is no longer maintained.
-
-
 The goal of this platform is provide an centralised knowledge base, primarily for my self and colleagues. Although I am sure, some of this will be useful to the wider community.
 
 - Hosted over at [https://docs.sdj.pw](https://docs.sdj.pw/?utm_source=github&utm_medium=repository&utm_campaign=sdj_pw)
