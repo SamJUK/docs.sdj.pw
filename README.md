@@ -1,5 +1,12 @@
 # DOCS.SDJ.PW
 
+> ⚠️ **Archived repository**
+>
+> This project has been migrated to my main website: https://www.samdjames.uk/docs/
+> The source code is now located within https://github.com/samjuk/samdjames.uk
+> This repo is no longer maintained.
+
+
 The goal of this platform is provide an centralised knowledge base, primarily for my self and colleagues. Although I am sure, some of this will be useful to the wider community.
 
 - Hosted over at [https://docs.sdj.pw](https://docs.sdj.pw/?utm_source=github&utm_medium=repository&utm_campaign=sdj_pw)
@@ -39,7 +46,7 @@ Type | Name | Description
 --- | --- | ---
 SECRET | `SSH_PRIVATE_KEY` | SSH Private key that is authorised to connect to the remote host
 SECRET | `SSH_KNOWN_HOSTS` | Known host entry for the remote host
-SECRET | `REMOTE_HOST` | Username & Host for the remote host 
+SECRET | `REMOTE_HOST` | Username & Host for the remote host
 SECRET | `REMOTE_PATH` | Absolute Path to the web root on the remote host
 SECRET | `CLOUDFLARE_CACHE_ZONE` | Cache Zone to flush during deployments
 SECRET | `CLOUDFLARE_CACHE_TOKEN` | API Token with permissions to flush the relevant zone
